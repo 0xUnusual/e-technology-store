@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    /* Eliminamos backdrop-blur para ganar picos de FPS. Sustituimos con un color semitransparente oscuro premium + bordes sutiles */
+    @apply bg-[#060B19]/90 border border-white/10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: #030612;
+  /* background-attachment: fixed ES LA CAUSA NÚMERO 1 DE LAG AL HACER SCROLL EN MUCHOS NAVEGADORES. Lo forzamos a scroll normal de hardware */
+  background-image: radial-gradient(circle at top, #060b21 0%, #000000 100%);
+  background-attachment: scroll;
+}
