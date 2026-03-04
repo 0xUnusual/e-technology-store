@@ -15,7 +15,7 @@ function App() {
     });
   }, []);
 
-  const WHATSAPP_LINK = "https://wa.me/1234567890?text=Hola,%20me%20gustaría%20obtener%20más%20información.";
+  const WHATSAPP_LINK = "https://wa.me/18494099160?text=Hola,%20me%20gustaría%20obtener%20más%20información.";
 
   const particlesOptions = useMemo(() => ({
     background: {
