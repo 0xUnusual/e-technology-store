@@ -74,8 +74,22 @@ export const Footer = ({ navLinks }: FooterProps) => {
         </div>
       </div>
 
-      <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light">
-        <p>© 2026 E-Technology. Todos los derechos reservados.</p>
+      <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs text-gray-500 font-light gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-1 md:gap-3 text-center md:text-left">
+          <p>© 2026 E-Technology. Todos los derechos reservados.</p>
+          <span className="hidden md:block opacity-20">|</span>
+          <p className="flex items-center gap-1">
+            Desarrollado por 
+            <a 
+              href="https://github.com/0xUnusual" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="text-[#00e5ff] font-black uppercase tracking-widest hover:text-white transition-colors"
+            >
+              0xUnusual
+            </a>
+          </p>
+        </div>
         <div className="flex gap-6 mt-6 md:mt-0">
           <a 
             href="https://www.instagram.com/e__technologystore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
