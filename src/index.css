@@ -18,7 +18,11 @@ body {
   margin: 0;
   font-family: "Outfit", sans-serif;
   background-color: #030612;
-  /* background-attachment: fixed ES LA CAUSA NÚMERO 1 DE LAG AL HACER SCROLL EN MUCHOS NAVEGADORES. Lo forzamos a scroll normal de hardware */
-  background-image: radial-gradient(circle at top, #060b21 0%, #000000 100%);
-  background-attachment: scroll;
+  /* Imagen nítida sin capas de opacidad adicionales */
+  background-image: url('./assets/banner-tecnology.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }

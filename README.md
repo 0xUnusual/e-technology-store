@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# E-Technology Store - Premium Mobile Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un sitio web de comercio electrónico de alta gama diseñado para una tienda de smartphones de lujo, enfocado en ofrecer una experiencia de usuario cinematográfica, moderna y altamente fluida.
 
-Currently, two official plugins are available:
+![Screenshot](/src/assets/banner-tecnology.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características Principales
 
-## Expanding the ESLint configuration
+- **💎 Estética Dark Luxury:** Un diseño vanguardista basado en *Glassmorphism*, con gradientes profundos, bordes de cristal y efectos visuales de alta gama.
+- **📱 Navegación Multi-página:** Arquitectura robusta utilizando `react-router-dom` con transiciones suaves entre el Inicio, Catálogo y Ofertas.
+- **🚀 Totalmente Responsive:** Adaptabilidad completa para todos los dispositivos (Mobile, Tablet, Desktop) con un menú de hamburguesa animado e intuitivo.
+- **💬 Contacto Dinámico:** Integración inteligente con WhatsApp que genera mensajes de cotización automáticos incluyendo el nombre del producto de interés.
+- **🎭 Animaciones de Alto Nivel:** Micro-interacciones y efectos de entrada espectaculares utilizando `framer-motion` y efectos de partículas con `tsparticles`.
+- **🏗️ Arquitectura de Componentes:** Código limpio y escalable organizado en componentes reutilizables y páginas modulares.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tecnologías Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend:** React + TypeScript + Vite
+- **Estilos:** Tailwind CSS (Vanilla CSS para tokens de diseño)
+- **Animaciones:** Framer Motion
+- **Iconografía:** Lucide React
+- **Enrutamiento:** React Router Dom
+- **Efectos:** @tsparticles/react
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Instalación y Uso
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/0xUnusual/e-technology-store.git
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. **Ejecutar en modo desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Construir para producción:**
+   ```bash
+   npm run build
+   ```
+
+## ✒️ Autor
+
+- **0xUnusual** - [GitHub Profile](https://github.com/0xUnusual)
+
+---
+Diseñado con ❤️ por **E-Technology Store**
